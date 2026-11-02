@@ -63,11 +63,11 @@
     }
     button:hover { background: #dfe8f7; }
     button:active { transform: scale(0.96); }
-    button:nth-child(3n), .igual {
+    button.operador, .igual {
       background: #4776d0;
       color: white;
     }
-    button:nth-child(3n):hover, .igual:hover { background: #3564bd; }
+    button.operador:hover, .igual:hover { background: #3564bd; }
     .igual { grid-column: span 2; }
   </style>
 </head>
@@ -81,19 +81,19 @@
     <section class="botones">
       <button onclick="limpiar()">AC</button>
       <button onclick="borrar()">⌫</button>
-      <button onclick="seleccionarOperacion('/')">÷</button>
+      <button class="operador" onclick="seleccionarOperacion('/')">÷</button>
       <button onclick="agregar('7')">7</button>
       <button onclick="agregar('8')">8</button>
       <button onclick="agregar('9')">9</button>
-      <button onclick="seleccionarOperacion('*')">×</button>
+      <button class="operador" onclick="seleccionarOperacion('*')">×</button>
       <button onclick="agregar('4')">4</button>
       <button onclick="agregar('5')">5</button>
       <button onclick="agregar('6')">6</button>
-      <button onclick="seleccionarOperacion('-')">−</button>
+      <button class="operador" onclick="seleccionarOperacion('-')">−</button>
       <button onclick="agregar('1')">1</button>
       <button onclick="agregar('2')">2</button>
       <button onclick="agregar('3')">3</button>
-      <button onclick="seleccionarOperacion('+')">+</button>
+      <button class="operador" onclick="seleccionarOperacion('+')">+</button>
       <button onclick="agregar('0')">0</button>
       <button onclick="agregar('.')">.</button>
       <button class="igual" onclick="calcular()">=</button>
