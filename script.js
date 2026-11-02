@@ -57,3 +57,8 @@ function borrar() {
     ? pantalla.value.slice(0, -1)
     : "0";
 }
+
+// Permite usar Escape para limpiar la calculadora.
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") limpiar();
+});
