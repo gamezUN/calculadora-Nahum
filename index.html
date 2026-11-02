@@ -4,6 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora | GMZ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #f3f5f9;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17233d;
+    }
+    .calculadora {
+      width: 100%;
+      max-width: 350px;
+      padding: 25px;
+      background: #ffffff;
+      border: 1px solid #e5e9f0;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(25, 45, 80, 0.09);
+    }
+    header p {
+      margin: 0 0 8px;
+      color: #4776d0;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    h1 { margin: 0 0 20px; font-size: 25px; }
+    #pantalla {
+      width: 100%;
+      height: 65px;
+      margin-bottom: 16px;
+      padding: 12px;
+      border: 1px solid #e3e8f0;
+      border-radius: 12px;
+      background: #f8faff;
+      color: #17233d;
+      font-size: 28px;
+      text-align: right;
+    }
+    .botones {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 9px;
+    }
+    button {
+      min-height: 58px;
+      border: 0;
+      border-radius: 12px;
+      background: #edf2fa;
+      color: #243653;
+      font-size: 19px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.15s;
+    }
+    button:hover { background: #dfe8f7; }
+    button:active { transform: scale(0.96); }
+    button:nth-child(3n), .igual {
+      background: #4776d0;
+      color: white;
+    }
+    button:nth-child(3n):hover, .igual:hover { background: #3564bd; }
+    .igual { grid-column: span 2; }
+  </style>
 </head>
 <body>
   <main class="calculadora">
