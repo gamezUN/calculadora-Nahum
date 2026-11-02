@@ -1,12 +1,12 @@
-# Calculadora GMZ
+# Calculadora
 
 Calculadora básica hecha con **HTML, CSS y JavaScript**.
 
-## ¿Qué puede hacer?
+## Funciones
 
 - Sumar, restar, multiplicar y dividir.
 - Usar números decimales.
-- Borrar el último número o limpiar la operación.
+- Borrar el último dígito o limpiar la operación.
 - Evitar la división entre cero.
 
 ## Archivos
@@ -19,5 +19,3 @@ Calculadora básica hecha con **HTML, CSS y JavaScript**.
 Abre el archivo `index.html` en tu navegador. No necesita instalar nada.
 
 Proyecto escolar para practicar HTML, CSS, JavaScript, eventos y manipulación del DOM.
-
-**GMZ | Desarrollo Web**
